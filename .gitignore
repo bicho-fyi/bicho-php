@@ -1,0 +1,5 @@
+/vendor/
+_temp/
+.env*
+.dev.vars*
+.DS_Store

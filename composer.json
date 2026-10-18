@@ -1,0 +1,21 @@
+{
+  "name": "bicho-fyi/php",
+  "description": "Report PHP exceptions and errors to Bicho over OTLP/HTTP JSON",
+
+  "type": "library",
+  "license": "Apache-2.0",
+  "homepage": "https://bicho.fyi",
+  "authors": [
+    { "name": "FreshJuice", "email": "contact@freshjuice.dev", "homepage": "https://freshjuice.dev/" },
+    { "name": "Alex Zappa", "email": "alex@zappa.dev", "homepage": "https://alex.zappa.dev/" }
+  ],
+  "support": { "source": "https://github.com/bicho-fyi/bicho-php", "issues": "https://github.com/bicho-fyi/bicho-php/issues" },
+  "keywords": ["bicho", "error-tracking", "otlp"],
+  "require": { "php": ">=8.2", "ext-curl": "*", "ext-json": "*" },
+  "autoload": { "psr-4": { "Bicho\\": "src/" } },
+  "scripts": {
+    "test": "php tests/run.php",
+    "check": "php scripts/check.php"
+  },
+  "archive": { "exclude": ["/_temp", "/.git", "/.env*", "/vendor", "/AGENTS.md"] }
+}
