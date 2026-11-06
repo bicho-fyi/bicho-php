@@ -15,7 +15,7 @@ foreach (['src', 'tests', 'scripts', 'examples'] as $directory) {
         }
     }
 }
-if (!str_contains(file_get_contents($root . '/README.md'), 'version-' . Bicho\Client::VERSION)) {
-    throw new RuntimeException('SDK and README versions differ');
+if (!str_contains(file_get_contents($root . '/README.md'), 'packagist/v/bicho-fyi/php')) {
+    throw new RuntimeException('README Packagist version badge is missing');
 }
-echo "PASS SDK and README versions agree\n";
+echo "PASS PHP syntax and README badge verified\n";

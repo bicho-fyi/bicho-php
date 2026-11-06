@@ -9,16 +9,11 @@ Report PHP exceptions and error messages to [Bicho](https://bicho.fyi) over OTLP
 
 ## Install
 
-The Composer package is `bicho-fyi/php`. It is not published to Packagist yet. To use a local checkout, add a path repository to your application's composer.json:
-
-```json
-{
-  "repositories": [{ "type": "path", "url": "../bicho-php" }],
-  "require": { "bicho-fyi/php": "^1.0" }
-}
+```sh
+composer require bicho-fyi/php:^1.0
 ```
 
-Then run `composer update bicho-fyi/php` in your application. Both the cURL and JSON PHP extensions must be available.
+Both the cURL and JSON PHP extensions must be available.
 
 ## Configure
 
@@ -111,4 +106,4 @@ Tests use native PHP loopback HTTP fixtures and do not require a hosted collecto
 
 ## License
 
-Copyright 2026 Alex Zappa (FreshJuice). Licensed under Apache-2.0. See [LICENSE](LICENSE) and [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md).
+Copyright 2026 [Alex Zappa](https://alex.zappa.dev/) ([FreshJuice](https://freshjuice.dev/)). Licensed under Apache-2.0. See [LICENSE](LICENSE) and [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md).
